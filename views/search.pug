@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h2.mt-4 Colleges Ranked By 2015 BC Cutoff
+  .alert.alert-info.mt-3(role='alert')
+    | You may search by college name e.g. Anna. or by cutoff e.g. 197 or by cutoff and department e.g. 197 Mechanical
+  form.form-inline.mt-2
+    .form-group
+      label.mr-sm-2 Minimum Cutoff:
+      input#min.form-control.mb-2.mr-sm-2(type='number', step='0.25', max='200', min='50', maxlength='4')
+    .form-group
+      label.mr-sm-2 Maximum Cutoff:
+      input#max.form-control.mb-2.mr-sm-2(type='number', step='0.25', max='200', min='50', maxlength='4')
+  #collegeList.mt-3
+    table#colleges_table.table.table-striped.table-bordered
+      thead
+        th BC Cutoff
+        th OC Cutoff
+        th Department
+        th College Name
+        th Councelling Code
+      tbody
+
+block script
+  script(src='/javascripts/search.js')

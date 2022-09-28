@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  #wrapper
+
+  h2.mt-4 Calculate Your Cutoff
+  form.mt-3
+    .form-group
+      label Physics Mark:
+      input#phy.form-control(type='number', step='0.25', max='200', min='50', maxlength='4')
+    .form-group
+      label Chemistry Mark:
+      input#chem.form-control(type='number', step='0.25', max='200', min='50', maxlength='4')
+    .form-group
+      label Mathematics Mark:
+      input#math.form-control(type='number', step='0.25', max='200', min='50', maxlength='4')
+    input#calc.btn.btn-info(type='button', name='sub', value='CALCULATE')
+  #marks.mt-3
+block script
+  script(src='/javascripts/calculator.js')
