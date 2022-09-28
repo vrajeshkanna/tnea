@@ -26,6 +26,9 @@ function populateTable() {
             collegeTableContent += '<tr>';
             collegeTableContent += '<td>' + this.BC + '</td>';
             collegeTableContent += '<td>' + this.OC + '</td>';
+            collegeTableContent += '<td>' + this.MBC + '</td>';
+            collegeTableContent += '<td>' + this.SC + '</td>';
+            collegeTableContent += '<td>' + this.ST + '</td>';
             collegeTableContent += '<td>' + this.brn + '</td>';
             collegeTableContent += '<td>' + this.con + '</td>';
             collegeTableContent += '<td>' + this.coc + '</td>';
