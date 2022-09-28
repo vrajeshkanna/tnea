@@ -15,16 +15,12 @@ function populateTable() {
 
     var collegeTableContent = '';
 
-    $.getJSON( '/colleges/collegeList', function( data ) {
+    $.getJSON( '/data/2022.json', function( data ) {
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
             collegeTableContent += '<tr>';
-            collegeTableContent += '<td>' + this.id + '</td>';
-            collegeTableContent += '<td>' + this.code + '</td>';
-            collegeTableContent += '<td>' + this.name + '</td>';
-            collegeTableContent += '<td>' + this.page + '</td>';
-            collegeTableContent += '<td>' + this.d_name + '</td>';
-            collegeTableContent += '<td><a href="http://univadm.annauniv.edu:7090/cutoff2015/cutoff.jsp?dist='+ this.d_id +'&collname='+ this.code +'&comm=5&submit=Submit">Cutoff</a></td>';
+            collegeTableContent += '<td>' + this.coc + '</td>';
+            collegeTableContent += '<td>' + this.con + '</td>';
             collegeTableContent += '</tr>';
         });
 

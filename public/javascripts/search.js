@@ -20,15 +20,15 @@ function populateTable() {
 
     var collegeTableContent = '';
 
-    $.getJSON( '/search/cutoff', function( data ) {
+    $.getJSON( '/data/2022.json', function( data ) {
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
             collegeTableContent += '<tr>';
-            collegeTableContent += '<td>' + this.bc + '</td>';
-            collegeTableContent += '<td>' + this.oc + '</td>';
-            collegeTableContent += '<td>' + this.department + '</td>';
-            collegeTableContent += '<td>' + this.name + '</td>';
-            collegeTableContent += '<td>' + this.code + '</td>';
+            collegeTableContent += '<td>' + this.BC + '</td>';
+            collegeTableContent += '<td>' + this.OC + '</td>';
+            collegeTableContent += '<td>' + this.brn + '</td>';
+            collegeTableContent += '<td>' + this.con + '</td>';
+            collegeTableContent += '<td>' + this.coc + '</td>';
             collegeTableContent += '</tr>';
         });
 
