@@ -15,12 +15,14 @@ function populateTable() {
 
     var collegeTableContent = '';
 
-    $.getJSON( '/data/2022.json', function( data ) {
+    $.getJSON( '/colleges/collegeList', function( data ) {
         // For each item in our JSON, add a table row and cells to the content string
         $.each(data, function(){
             collegeTableContent += '<tr>';
-            collegeTableContent += '<td>' + this.coc + '</td>';
-            collegeTableContent += '<td>' + this.con + '</td>';
+            collegeTableContent += '<td>' + this.code + '</td>';
+            collegeTableContent += '<td>' + this.name + '</td>';
+            collegeTableContent += '<td>' + this.page + '</td>';
+            collegeTableContent += '<td>' + this.d_name + '</td>';
             collegeTableContent += '</tr>';
         });
 
