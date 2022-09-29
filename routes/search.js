@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('search', { title: 'TNEA 2022' });
+  res.render('search', { title: 'TNEA 2022 | Colleges Ranked By Cutoff' });
 });
 
 // parameter middleware that will run before the next routes
