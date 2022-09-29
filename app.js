@@ -11,6 +11,7 @@ var routes = require('./routes/index');
 var districts = require('./routes/districts');
 var colleges = require('./routes/colleges');
 var search = require('./routes/search');
+var rank = require('./routes/rank');
 var calculator = require('./routes/calculator');
 
 var app = express();
@@ -41,6 +42,7 @@ app.use('/', routes);
 app.use('/districts', districts);
 app.use('/colleges', colleges);
 app.use('/search', search);
+app.use('/rank', rank);
 app.use('/calculator', calculator);
 
 // catch 404 and forward to error handler
