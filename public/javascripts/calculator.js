@@ -47,7 +47,7 @@ $(document).ready(function() {
 				        </tr>\
 				         <tr class="" style="font-size:25px">\
 				            <th colspan="4" class="bg-muted text-right">Your Cutoff Mark:</th>\
-				            <td class="bg-info"><b>'+cutoff+'</b></td>\
+				            <td class="bg-success"><b>'+cutoff+'</b></td>\
 				        </tr>\
 				    </tbody>\
 				</table>');
