@@ -3,6 +3,6 @@ TNEA cutoff seach and rank
 
 # Install and start
 
-`npm i`
+`yarn install`
 
-`npm start`
+`yarn start`
