@@ -38,3 +38,4 @@ jspm_packages
 
 # Rough Directory
 rough
+.DS_Store
