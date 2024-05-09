@@ -40,3 +40,20 @@ function populateTable() {
     });
   });
 }
+
+/* Custom filtering function which will search data in column four between two values */
+$.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+  var min = parseInt($("#min").val(), 10);
+  var max = parseInt($("#max").val(), 10);
+  var cutoff = parseFloat(data[0]) || 0; // use data for the cutoff column
+
+  if (
+    (isNaN(min) && isNaN(max)) ||
+    (isNaN(min) && cutoff <= max) ||
+    (min <= cutoff && isNaN(max)) ||
+    (min <= cutoff && cutoff <= max)
+  ) {
+    return true;
+  }
+  return false;
+});
