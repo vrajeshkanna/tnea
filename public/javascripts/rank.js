@@ -18,7 +18,7 @@ $(document).ready(function () {
 function populateTable() {
   var collegeTableContent = "";
 
-  $.getJSON("/data/2023_rank.json", function (data) {
+  $.getJSON("/data/2024_rank.json", function (data) {
     // For each item in our JSON, add a table row and cells to the content string
     $.each(data, function () {
       collegeTableContent += "<tr>";
